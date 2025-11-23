@@ -34,7 +34,6 @@ build/
 
 ### Environment variables ###
 .env
-.env.local
-.env.staging
-.env.production
+.env.dev
+.env.prod
 
