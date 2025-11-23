@@ -9,6 +9,10 @@ public abstract class DomainEntity {
         this.id = EntityId.generate();
     }
 
+    public DomainEntity(EntityId id) {
+        this.id = id;
+    }
+
     public EntityId getId() {
         return id;
     }
