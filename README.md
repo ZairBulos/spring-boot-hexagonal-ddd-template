@@ -33,3 +33,17 @@ src/test/                           # Test directory
 ├── java/                               # Test source files
 └── resources/                          # Test resources
 ```
+
+## Docker Compose Commands
+
+### Start containers
+
+```shell
+docker compose --env-file .env.dev up -d
+```
+
+### Stop and clean containers
+
+```shell
+docker compose down -v
+```
