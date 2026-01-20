@@ -17,6 +17,10 @@ spring:
     restart:
       enabled: true
 
+  docker:
+    compose:
+      enabled: true
+
 management:
   endpoints:
     web:
@@ -28,5 +32,5 @@ management:
 
 logging:
   level:
-    root: debug
-    org.springframework: debug
+    root: info
+    org.springframework: info
