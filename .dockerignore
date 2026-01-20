@@ -13,7 +13,7 @@ target/
 # Docker
 .dockerignore
 Dockerfile
-docker-compose.yaml
+compose.yaml
 
 # Environment variables
 .env
