@@ -10,6 +10,15 @@ public record EntityId(UUID value) {
     }
 
     public static EntityId generate() {
-        return new  EntityId(UUID.randomUUID());
+        return new EntityId(UUID.randomUUID());
+    }
+
+    public static EntityId fromString(String value) {
+        Objects.requireNonNull(value, "EntityId string cannot be null");
+        return new EntityId(UUID.fromString(value));
+    }
+
+    public String asString() {
+        return value.toString();
     }
 }
